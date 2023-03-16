@@ -1,0 +1,64 @@
+package application;
+
+import java.util.Scanner;
+
+public class Signos {
+   
+    public static void main(String[] args) {
+    Scanner dma = new Scanner (System.in);
+
+    System.out.println("Advinhar meu SIGNO");
+
+    System.out.println("Digite o dia em que nasceu");
+    int d =dma.nextInt();
+    
+    System.out.println("Digite o mes em que nasceu");
+
+    int m =dma.nextInt();
+
+    System.out.println("Digite o ano em que nasceu") ;
+
+    int a =dma.nextInt();
+
+    if ((m==12 && d>=22) || (m==1 && d<=20)) {
+        System.out.println("Seu Signo é CAPRICORNIO");
+    
+    } else if((m==1 && d>=21) || (m==2 && d<=19)) {
+        System.out.println("Seu Signo é AQUARIO");
+
+    } else if((m==2 && d>=19) || (m==3 && d<=20)) {
+        System.out.println("Seu signo é PEIXES");
+
+    } else if((m==3 && d>=21) || (m==4 && d<=20)) {
+        System.out.println("Seu signo é ÁRIES");
+    
+    } else if((m==4 && d>=21) || (m==5 && d<+20)) {
+        System.out.println("Seu signo é TOURO");
+
+    } else if((m==5 && d>=21) || (m==6 && d<=20)) {
+        System.out.println("seu signo é GÊMEOS");
+
+    } else if((m==6 && d>=21) || (m==7 && d<=22)) {
+        System.out.println("Seu signo é  CANCêR");
+    
+    } else if((m==7 && d>=23) || (m==8 && d<=22)) {
+        System.out.println("Seu signo é LEÃO");
+
+    } else if((m==8 && d>= 23) || (m==9 && d<=22)) {
+        System.out.println("Seu signo é VIRGEM");
+
+    } else if((m==9 && d>=22) || (m==10 && d<=22)){
+        System.out.println("Seu signo é LIBRA");
+
+    } else if((m==10 && d>=23) || (m==11 && d<=21)){        
+        System.out.println("Seu signo é ESCORPIÂO");
+
+    } else if((m==11 && d>=22) || (m==12 && d<=21)){
+        System.out.println("Seu signo é SAGITÁRIO");
+    }
+}
+
+    @Override
+    public String toString() {
+        return "Signos []";
+    }
